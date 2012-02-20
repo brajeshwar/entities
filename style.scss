@@ -1,0 +1,661 @@
+/*!
+ *
+ * Brajeshwar
+ * http://brajeshwar.com
+ * Twitter - @Brajeshwar
+ *
+ * ----------------------------------------------
+ * The CSS is generated with Sass and Compass.
+ * You better edit the Sass files than meddling with the CSS files!
+ * ----------------------------------------------
+ */
+
+@import "compass";
+
+// Links
+$linkColor:             #08c !default;
+$linkColorHover:        darken($linkColor, 15) !default;
+
+// Grays
+$black:                 #000 !default;
+$grayDarker:            #222 !default;
+$grayDark:              #333 !default;
+$gray:                  #555 !default;
+$grayLight:             #999 !default;
+$grayLighter:           #eee !default;
+$white:                 #fff !default;
+
+// Accent colors
+$blue:                  #049cdb !default;
+$blueDark:              #0064cd !default;
+$green:                 #46a546 !default;
+$red:                   #9d261d !default;
+$yellow:                #ffc40d !default;
+$orange:                #f89406 !default;
+$pink:                  #c3325f !default;
+$purple:                #7a43b6 !default;
+
+// Typography
+$baseFontSize:          14px !default;
+$baseFontFamily:        "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif !default;
+$baseLineHeight:        18px !default;
+$textColor:             $grayDark !default;
+$baseFontMono:          Menlo, "Courier New", Courier, monospace;
+
+$site-width:            1000px;
+
+// Corrects block display not defined in IE6/7/8/9 & FF3
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+
+// Corrects inline-block display not defined in IE6/7/8/9 & FF3
+ 
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+// Prevents modern browsers from displaying 'audio' without controls
+
+audio:not([controls]) {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+html {
+    font-size: 100%; 
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%; 
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 1em auto;
+    width: 80%;
+    max-width: $site-width;
+    font-size: $baseFontSize;
+    font-family: $baseFontFamily;
+    line-height: $baseLineHeight;
+    color: $textColor;
+    background: #fafafa;
+    text-shadow: rgba(255, 255, 255, 0.75) 0 1px 0;
+}
+
+a {
+    color: $linkColor;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:hover,
+a:focus,
+a:active {
+    outline: 0;
+    color: $linkColorHover;
+    text-decoration: underline;
+}
+
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+
+h6 {
+    font-size: 0.75em;
+    margin: 2.33em 0;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+dfn {
+    font-style: italic;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+p,
+pre {
+    margin: 1em 0;
+}
+
+pre,
+code,
+kbd,
+samp {
+    font-family: $baseFontMono;
+    _font-family: $baseFontMono;
+    font-size: 1em;
+}
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+q {
+    quotes: none;
+}
+
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+small {
+    font-size: 75%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+dl,
+menu,
+ol,
+ul {
+    margin: 1em 0;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+menu,
+ol,
+ul {
+    padding: 0 0 0 40px;
+}
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+img {
+    border: 0; 
+    -ms-interpolation-mode: bicubic; 
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+form {
+    margin: 0;
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+    border: 0; 
+    padding: 0;
+    white-space: normal; 
+    *margin-left: -7px; 
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; 
+    margin: 0; 
+    vertical-align: baseline; 
+    *vertical-align: middle; 
+}
+
+button,
+input {
+    line-height: normal; 
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor: pointer; 
+    -webkit-appearance: button; 
+    *overflow: visible;  
+}
+
+button[disabled],
+input[disabled] {
+    cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; 
+    padding: 0; 
+    *height: 13px; 
+    *width: 13px; 
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield; 
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; 
+    box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto; 
+    vertical-align: top; 
+}
+
+.data-display {
+    height: 100%;
+    overflow: scroll;
+}
+
+/* Tables */
+table {
+
+    $bg: $white;
+
+    $border-width: 1px;
+    $border-style: solid;
+    $border-color: #aaa;
+
+    $striped-bg: #f1f1f1;
+    $hover-color: #ffc;
+
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: $border-width $border-style $border-color;
+    background: $bg;
+    margin: 1em auto;
+
+    caption {
+        font-style: italic;
+        font-size: smaller;
+        text-align: right;
+        padding: 0.2em 0.1em;
+    }
+    
+    th,
+    td {
+        // padding: 8px;
+        padding: 4px 5px; // create a more condensed table
+        line-height: $baseLineHeight;
+        font-family: $baseFontMono;
+        text-align: left;
+        vertical-align: top;
+        border-top: $border-width $border-style $border-color;
+    }
+
+    thead th {
+        padding: 8px 5px;
+        font-weight: bold;
+        background: $gray;
+        color: $white;
+        text-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px;
+        vertical-align: bottom;
+        font-family: $baseFontFamily;
+    }
+    // Remove top border from thead by default
+    thead:first-child tr th,
+    thead:first-child tr td {
+        border-top: 0;
+    }
+
+    tbody td {
+        font-size: 90%;
+    }
+
+    tbody th {
+        padding: 8px 5px;
+        font-weight: bold;
+    }
+
+    // Account for multiple tbody instances
+    tbody + tbody {
+        border-top: $border-width*2 $border-style darken($border-color, 30%);
+    }
+
+    // Borders
+    th + th,
+    td + td,
+    th + td,
+    td + th {
+        border-left: $border-width $border-style $border-color;
+    }
+    // Prevent a double border
+    thead:first-child tr:first-child th,
+    tbody:first-child tr:first-child th,
+    tbody:first-child tr:first-child td {
+        border-top: 0;
+    }
+
+    // Default zebra-stripe styles (alternating gray and transparent backgrounds)
+    tbody {
+        tr:nth-child(odd) td,
+        tr:nth-child(odd) th {
+            background-color: $striped-bg;
+        }
+    }
+
+    // Hover
+    tbody tr:hover td,
+    tbody tr:hover th {
+        background-color: $hover-color;
+    }
+
+    a {
+        display: block;
+    }
+
+    // customize the tbody header
+    tbody th {
+        background: #fff4e2 !important;
+        text-transform: uppercase;
+        font-family: $baseFontFamily;
+        text-shadow: rgba(255, 255, 255, 0.75) 0 1px 0;
+
+        &:before {
+            content: "\2192";
+            margin-left: -35px;
+            margin-right: 20px;
+        }
+    }
+
+}
+
+
+/* Scroll to Top */
+.scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+
+    a {
+        @include border-radius(4px);
+        @include transition-delay(1s);
+        padding: 0.5em 1em;
+        display: block;
+        font-size: small;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px;
+        color: $grayLighter;
+        background: $gray;
+        
+        &:hover {
+            color: $white;
+            background: $grayDark;
+            text-shadow: rgba(0, 0, 0, 1) 0 1px 0;
+        }
+    }
+}
+
+// NAVIGATIONS
+
+/* menu */
+.menu {
+    @include border-radius(5px);
+    width: 100%;
+    height: 36px;
+    border: 1px solid #e5e5e5;
+    background-color: #eeeeee;
+    background-repeat: repeat-x;
+    @include background-image(linear-gradient(top bottom, #f5f5f5, #eee));
+}
+.menu .nav {
+    margin: 0;
+    padding: 0;
+}
+.menu .nav > li > a {
+    @include border-radius(0);
+    margin: 0;
+    padding-top:    11px;
+    padding-bottom: 11px;
+    border-left: 1px solid #f5f5f5;
+    border-right: 1px solid #e5e5e5;
+}
+.menu .nav > .active > a,
+.menu .nav > .active > a:hover {
+    padding-left: 13px;
+    color: #777;
+    background-color: #e9e9e9;
+    border-right-color: #ddd;
+    border-left: 0;
+}
+.menu .nav > .active > a .caret,
+.menu .nav > .active > a:hover .caret {
+    border-top-color: #777;
+}
+.menu .nav > li:first-child > a,
+.menu .nav > li:first-child > a:hover {
+    border-left: 0;
+    padding-left: 12px;
+  -webkit-border-radius: 4px 0 0 4px;
+     -moz-border-radius: 4px 0 0 4px;
+          border-radius: 4px 0 0 4px;
+}
+.menu .nav > li:last-child > a {
+    border-right: 0;
+}
+.menu .dropdown-menu {
+  -webkit-border-radius: 0 0 4px 4px;
+     -moz-border-radius: 0 0 4px 4px;
+          border-radius: 0 0 4px 4px;
+}
+
+/* Fixed menu on scroll, but only for 980px and up */
+@media (min-width: 980px) {
+    .menu-fixed {
+        @include border-radius(0);
+        @include single-box-shadow(rgba(0, 0, 0, 0.1), 0, 1px, 3px);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 20;
+        border-color: #d5d5d5;
+        border-width: 0 0 1px;
+    }
+
+    .menu-fixed .nav {
+        width: $site-width;
+        margin: 0 auto;
+        padding: 0 1px;
+    }
+
+    .menu .nav > li:first-child > a,
+    .menu .nav > li:first-child > a:hover {
+        @include border-radius(0);
+    }
+
+    .data-head-fixed {
+        visibility: hidden;
+        position: fixed;
+        top: 35px;
+        width: $site-width;
+        z-index: 10;
+        background: yellow;
+        
+        table {
+            margin: 0;
+            border-color: $black;
+        }
+    }
+}
+
+// NAVIGATIONS
+// -----------
+
+// BASE CLASS
+// ----------
+
+.nav {
+  margin-left: 0;
+  margin-bottom: $baseLineHeight;
+  list-style: none;
+}
+
+// Make links block level
+.nav > li > a {
+  display: block;
+}
+.nav > li > a:hover {
+  text-decoration: none;
+  background-color: $grayLighter;
+}
+
+// Nav headers (for dropdowns and lists)
+.nav .nav-header {
+  display: block;
+  padding: 3px 15px;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: $baseLineHeight;
+  color: $grayLight;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  text-transform: uppercase;
+}
+// Space them out when they follow another list item (link)
+.nav li + .nav-header {
+  margin-top: 9px;
+}
+
+// TABS AND PILLS
+// -------------
+
+// Common styles
+.nav-tabs,
+.nav-pills {
+  @include clearfix();
+}
+.nav-tabs > li,
+.nav-pills > li {
+  float: left;
+}
+.nav-tabs > li > a,
+.nav-pills > li > a {
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: 2px;
+  line-height: 14px; // keeps the overall height an even number
+}
+
+// PILLS
+// -----
+
+// Links rendered as pills
+.nav-pills > li > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  @include border-radius(5px);
+}
+
+// Active state
+.nav-pills .active > a,
+.nav-pills .active > a:hover {
+  color: $white;
+  background-color: $linkColor;
+}
+
+
+// Pills
+.nav-pills.nav-stacked > li > a {
+  margin-bottom: 3px;
+}
+.nav-pills.nav-stacked > li:last-child > a {
+  margin-bottom: 1px; // decrease margin to match sizing of stacked tabs
+}
