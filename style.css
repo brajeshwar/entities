@@ -293,6 +293,13 @@ textarea {
   vertical-align: top;
 }
 
+hr {
+  margin: 0.5em 0;
+  border: 0;
+  border-top: 1px solid #bbb;
+  border-bottom: 1px solid #fff;
+}
+
 .data-display {
   height: 100%;
   overflow: scroll;
@@ -611,4 +618,9 @@ table tbody th:before {
 
 .nav-pills.nav-stacked > li:last-child > a {
   margin-bottom: 1px;
+}
+
+.social {
+  margin: 1em 0;
+  color: #999999;
 }
