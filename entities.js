@@ -26,7 +26,7 @@ function processScroll() {
 $(document).ready(function(){
     // hide #back-top first
     $(".scroll-top").hide();
-    
+
     // fade in #back-top
     $(function () {
         $(window).scroll(function () {
