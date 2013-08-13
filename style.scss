@@ -1,13 +1,8 @@
 /*!
  *
  * Brajeshwar
- * http://brajeshwar.com
- * Twitter - @Brajeshwar
+ * http://brajeshwar.me
  *
- * ----------------------------------------------
- * The CSS is generated with Sass and Compass.
- * You better edit the Sass files than meddling with the CSS files!
- * ----------------------------------------------
  */
 
 @import "compass";
@@ -60,7 +55,7 @@ summary {
 }
 
 // Corrects inline-block display not defined in IE6/7/8/9 & FF3
- 
+
 audio,
 canvas,
 video {
@@ -80,9 +75,9 @@ audio:not([controls]) {
 }
 
 html {
-    font-size: 100%; 
-    -webkit-text-size-adjust: 100%; 
-    -ms-text-size-adjust: 100%; 
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
 }
 
 html,
@@ -249,8 +244,8 @@ nav ol {
 }
 
 img {
-    border: 0; 
-    -ms-interpolation-mode: bicubic; 
+    border: 0;
+    -ms-interpolation-mode: bicubic;
 }
 
 svg:not(:root) {
@@ -268,34 +263,34 @@ fieldset {
 }
 
 legend {
-    border: 0; 
+    border: 0;
     padding: 0;
-    white-space: normal; 
-    *margin-left: -7px; 
+    white-space: normal;
+    *margin-left: -7px;
 }
 
 button,
 input,
 select,
 textarea {
-    font-size: 100%; 
-    margin: 0; 
-    vertical-align: baseline; 
-    *vertical-align: middle; 
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    *vertical-align: middle;
 }
 
 button,
 input {
-    line-height: normal; 
+    line-height: normal;
 }
 
 button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    cursor: pointer; 
-    -webkit-appearance: button; 
-    *overflow: visible;  
+    cursor: pointer;
+    -webkit-appearance: button;
+    *overflow: visible;
 }
 
 button[disabled],
@@ -305,16 +300,16 @@ input[disabled] {
 
 input[type="checkbox"],
 input[type="radio"] {
-    box-sizing: border-box; 
-    padding: 0; 
-    *height: 13px; 
-    *width: 13px; 
+    box-sizing: border-box;
+    padding: 0;
+    *height: 13px;
+    *width: 13px;
 }
 
 input[type="search"] {
-    -webkit-appearance: textfield; 
+    -webkit-appearance: textfield;
     -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box; 
+    -webkit-box-sizing: content-box;
     box-sizing: content-box;
 }
 
@@ -330,8 +325,8 @@ input::-moz-focus-inner {
 }
 
 textarea {
-    overflow: auto; 
-    vertical-align: top; 
+    overflow: auto;
+    vertical-align: top;
 }
 
 hr {
@@ -371,7 +366,7 @@ table {
         text-align: right;
         padding: 0.2em 0.1em;
     }
-    
+
     th,
     td {
         // padding: 8px;
@@ -479,7 +474,7 @@ table {
         text-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px;
         color: $grayLighter;
         background: $gray;
-        
+
         &:hover {
             color: $white;
             background: $grayDark;
@@ -574,7 +569,7 @@ table {
         width: $site-width;
         z-index: 10;
         background: yellow;
-        
+
         table {
             margin: 0;
             border-color: $black;

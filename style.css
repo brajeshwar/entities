@@ -1,13 +1,8 @@
-/*
+/*!
  *
  * Brajeshwar
- * http://brajeshwar.com
- * Twitter - @Brajeshwar
+ * http://brajeshwar.me
  *
- * ----------------------------------------------
- * The CSS is generated with Sass and Compass.
- * You better edit the Sass files than meddling with the CSS files!
- * ----------------------------------------------
  */
 article,
 aside,
@@ -400,7 +395,6 @@ table tbody th:before {
   border-radius: 4px;
   -webkit-transition-delay: 1s;
   -moz-transition-delay: 1s;
-  -ms-transition-delay: 1s;
   -o-transition-delay: 1s;
   transition-delay: 1s;
   padding: 0.5em 1em;
@@ -435,7 +429,6 @@ table tbody th:before {
   background-image: -webkit-linear-gradient(top bottom, #f5f5f5, #eeeeee);
   background-image: -moz-linear-gradient(top bottom, #f5f5f5, #eeeeee);
   background-image: -o-linear-gradient(top bottom, #f5f5f5, #eeeeee);
-  background-image: -ms-linear-gradient(top bottom, #f5f5f5, #eeeeee);
   background-image: linear-gradient(top bottom, #f5f5f5, #eeeeee);
 }
 
