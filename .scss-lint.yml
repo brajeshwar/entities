@@ -1,0 +1,12 @@
+linters:
+  ColorKeyword:
+    enabled: false
+
+  SelectorFormat:
+    enabled: true
+    convention: hyphenated_BEM # hyphenated_lowercase or 'BEM', or 'hyphenated_BEM', or 'snake_case', or 'camel_case', or a regex pattern
+
+  StringQuotes:
+    enabled: true
+    style: double_quotes # or single_quotes
+
