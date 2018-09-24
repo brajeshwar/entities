@@ -49,7 +49,6 @@ $(document).ready(function(){
 
 // Smooth Anchor scrolling
 $(document).ready(function() {
-
     $('a[href*=#]').each(function() {
         if($(this).attr('href').indexOf("#") == 0) {
             $(this).click(function(e) {
