@@ -54,7 +54,7 @@ $(document).ready(function() {
             $(this).click(function(e) {
               e.preventDefault();
               var targetOffset = $($(this).attr('href')).offset().top;
-              $('body').animate({scrollTop: targetOffset - 75}, 500);
+              $('html, body').animate({scrollTop: targetOffset - 75}, 500);
             });
         }
     });
