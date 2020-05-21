@@ -1,14 +1,11 @@
 # Character Entities
 
-## [Character Entities Cheat Sheet](https://brajeshwar.github.io/entities/) for HTML, CSS (content) and Javascript.
+> Character Entities Cheat Sheet
 
-## Author(s)
+## Contributors
 
-* [Brajeshwar Oinam](http://brajeshwar.me/)
-
-
-## TODO
-
-* Move away from Compass and Ruby. Use the simplest one, perhaps just plain HTML/CSS.
-* Check references and missing ones from [Arrows](http://en.wikipedia.org/wiki/Arrow_%28symbol%29#Arrows_in_Unicode) (Symbols).
-
+- [Brajeshwar Oinam](https://brajeshwar.com/), [Github](https://github.com/brajeshwar)
+- [Rafael Lagemann](https://github.com/rdlagemann)
+- [Chelsea Myers](http://chelmyers.com), [Github](https://github.com/chelmyers)
+- [Mili Abdo](https://github.com/Mili1984)
+- [dschuessler](https://github.com/dschuessler)
