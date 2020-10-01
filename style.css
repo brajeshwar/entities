@@ -45,7 +45,7 @@ textarea {
 body {
   margin: 1em;
   max-width: 100%;
-  font-size: 14px;
+  font-size: 18px;
   font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;
   line-height: 18px;
   color: #333333;
@@ -360,9 +360,14 @@ table tbody tr:nth-child(odd) td,
 table tbody tr:nth-child(odd) th {
   background-color: #f1f1f1;
 }
+table tbody tr td,
+table tbody tr th{
+  transition: all .3s;
+}
 table tbody tr:hover td,
 table tbody tr:hover th {
-  background-color: #ffffcc;
+  background-color: #555;
+  color: #fff;
 }
 table a {
   display: block;
